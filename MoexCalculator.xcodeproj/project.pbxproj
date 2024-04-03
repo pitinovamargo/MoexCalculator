@@ -8,18 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		647B12482BBC3BE000D22F7A /* MoexCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647B12472BBC3BE000D22F7A /* MoexCalculatorApp.swift */; };
-		647B124A2BBC3BE000D22F7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647B12492BBC3BE000D22F7A /* ContentView.swift */; };
 		647B124C2BBC3BE500D22F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647B124B2BBC3BE500D22F7A /* Assets.xcassets */; };
 		647B124F2BBC3BE500D22F7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647B124E2BBC3BE500D22F7A /* Preview Assets.xcassets */; };
+		647B12572BBDE4EB00D22F7A /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647B12562BBDE4EB00D22F7A /* Currency.swift */; };
+		647B12592BBDE55000D22F7A /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647B12582BBDE55000D22F7A /* CalculatorModel.swift */; };
+		647B125B2BBDE76500D22F7A /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647B125A2BBDE76500D22F7A /* CalculatorViewModel.swift */; };
+		647B125D2BBDE92500D22F7A /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647B125C2BBDE92500D22F7A /* CalculatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		647B12442BBC3BE000D22F7A /* MoexCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoexCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		647B12472BBC3BE000D22F7A /* MoexCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoexCalculatorApp.swift; sourceTree = "<group>"; };
-		647B12492BBC3BE000D22F7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		647B124B2BBC3BE500D22F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		647B124E2BBC3BE500D22F7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		647B12502BBC3BE500D22F7A /* MoexCalculator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoexCalculator.entitlements; sourceTree = "<group>"; };
+		647B12562BBDE4EB00D22F7A /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		647B12582BBDE55000D22F7A /* CalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = "<group>"; };
+		647B125A2BBDE76500D22F7A /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
+		647B125C2BBDE92500D22F7A /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +58,11 @@
 		647B12462BBC3BE000D22F7A /* MoexCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				647B125C2BBDE92500D22F7A /* CalculatorView.swift */,
+				647B125A2BBDE76500D22F7A /* CalculatorViewModel.swift */,
+				647B12582BBDE55000D22F7A /* CalculatorModel.swift */,
+				647B12562BBDE4EB00D22F7A /* Currency.swift */,
 				647B12472BBC3BE000D22F7A /* MoexCalculatorApp.swift */,
-				647B12492BBC3BE000D22F7A /* ContentView.swift */,
 				647B124B2BBC3BE500D22F7A /* Assets.xcassets */,
 				647B12502BBC3BE500D22F7A /* MoexCalculator.entitlements */,
 				647B124D2BBC3BE500D22F7A /* Preview Content */,
@@ -139,8 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				647B124A2BBC3BE000D22F7A /* ContentView.swift in Sources */,
+				647B12572BBDE4EB00D22F7A /* Currency.swift in Sources */,
+				647B125D2BBDE92500D22F7A /* CalculatorView.swift in Sources */,
 				647B12482BBC3BE000D22F7A /* MoexCalculatorApp.swift in Sources */,
+				647B12592BBDE55000D22F7A /* CalculatorModel.swift in Sources */,
+				647B125B2BBDE76500D22F7A /* CalculatorViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +211,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -256,6 +269,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -281,7 +295,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -313,7 +327,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
